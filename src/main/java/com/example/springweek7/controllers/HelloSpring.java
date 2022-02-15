@@ -27,11 +27,7 @@ public class HelloSpring {
     @GetMapping("/wwwerdetfredagdk")
     public String wwwerdetfredagdk(){
         int d = dayOfWeek.date();
-        boolean fredag = false;
-        if(d == 5){
-            fredag = true;
-        }
-        if(fredag){
+        if(d==5){
             return "I dag er det fredag";
         } else {
             return "I dag er det ikke fredag";
